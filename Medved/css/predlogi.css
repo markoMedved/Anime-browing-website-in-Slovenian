@@ -1,0 +1,24 @@
+/*večina stilov za isci.html je v brskaj.css saj so enaki*/
+.zgornjiDiv{
+  position: relative;
+  top: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+.predlogiNaslov{
+  width:100%;
+  position: absolute;
+  color: white;
+  top: 0px;
+  font-size: xx-large;
+}
+
+.animeDiv{
+  position: relative;
+  top: 200px;
+  background-color:  rgb(71, 71, 71);
+  padding: 10px;
+  width: 100%;
+}
+

@@ -1,0 +1,83 @@
+/*večina stilov za isci.html je v brskaj.css saj so enaki*/
+
+/*stil za div ki vsebuje iskalnik*/
+.zgornjiDiv{
+  position: relative;
+  top: 80px;
+}
+
+/*stil iskalnega inputa*/
+.iskalnaVrstica{
+  position: absolute;
+  background-color: rgb(85, 85, 85);
+  color:  white;
+  top: 90px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: x-large;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  width: 400px;
+  max-width: 80%;
+}
+
+/*v fokusu*/
+.iskalnaVrstica:focus{
+  outline: none;
+  border: 2px solid rgb(107, 218, 252);
+}
+
+/*naslov išči anime*/
+.iskanjeNaslov{
+  position: absolute;
+  color: white;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: xx-large;
+}
+
+
+/*gumb za iskanje*/
+.gumbIsci{
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding-inline: 2%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background-color: rgb(124, 210, 236);
+  border-style: none;
+  font-size:large;
+  font-weight: bold;
+}
+
+/*ob hover*/
+.gumbIsci:hover{
+  cursor: pointer;
+  background-color: rgb(20, 195, 248);
+}
+
+/*napis ni zadetka (defaul prikaz na none)*/
+.niZadetka{
+  position: absolute;
+  color: white;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%,-50%);/**/
+  font-size: xx-large;
+  display: none;
+}
+
+/*div za opis enega animeja, se zelo spreminja z javascriptom (in veliko se jih doda)*/
+.animeDiv{
+  position: relative;
+  top: 300px;
+  background-color:  rgb(71, 71, 71);
+  padding: 10px;
+  width: 100%;
+
+}
+

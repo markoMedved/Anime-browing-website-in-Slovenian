@@ -1,0 +1,52 @@
+/*večina stilov za isci.html je v brskaj.css saj so enaki kot za brskaj.html*/
+
+/*stil zgornjega diva*/
+.zgornjiDiv{
+  position: relative;
+  top: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+/*naslov strani priljubljeno.css*/
+.priljubljenoNaslov{
+  width:100%;
+  position: absolute;
+  color: white;
+  top: 0px;
+  font-size: xx-large;
+}
+
+
+/*div za opis enega animeja, se zelo spreminja z javascriptom (in veliko se jih doda)*/
+.animeDiv{
+  position: relative;
+  top: 200px;
+  background-color:  rgb(71, 71, 71);
+  padding: 10px;
+  width: 100%;
+}
+
+
+/*sprememba stila za ta gumb ker, je sedaj vedno viden*/
+.gumbOdstrani{
+  /*lahko bi pustil samo zadnjo vrstico ker se vse ostalo ohrani*/
+  margin: 2px;
+  padding-inline: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 117, 117);
+  border-style: none;
+  font-size:large;
+  font-weight: bold;
+  position:absolute;
+  top: 80px;
+  left: 950px;
+  
+  display: block;
+}
+
+.gumbOdstrani:hover{
+  cursor: pointer;
+  background-color: rgb(255, 165, 165);
+}

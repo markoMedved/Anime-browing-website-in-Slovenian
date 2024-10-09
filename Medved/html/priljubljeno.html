@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brskanje</title>
+  <link rel="stylesheet" type="text/css" href="/Medved/css/1.css" />
+  <script src="/Medved/javaScript/1.js"></script>
+
+</head>
+<body class="telo">
+  <!-- prva vrstica za prikaz ko je stran dovolj velika  --> 
+<div id="vrsticaZgoraj" class = "navigacijskaVrstica">
+  <a  href="/Medved/html/brskaj.html">BRSKAJ</a>
+  <a  href="/Medved/html/isci.html">IŠČI</a>
+  <a class="trenutna" href="/Medved/html/priljubljeno.html">PRILJUBLJENO</a>
+  <a  href="/Medved/html/predlogi.html">PREDLOGI</a>
+  <a  href="/Medved/html/profil.html">PROFIL</a>
+</div>
+
+<!-- druga vrstica za preverjanje če se je zgodil overflow --> 
+<div id="vrsticaZgoraj2" class = "navigacijskaVrstica">
+  <a href="/Medved/html/brskaj.html">BRSKAJ</a>
+  <a  href="/Medved/html/isci.html">IŠČI</a>
+  <a  href="/Medved/html/priljubljeno.html">PRILJUBLJENO</a>
+  <a  href="/Medved/html/predlogi.html">PREDLOGI</a>
+  <a  href="/Medved/html/profil.html">PROFIL</a>
+</div>
+
+<!-- tretja vrstica za prikaz po overflowu --> 
+<div id="vrsticaZgoraj3" class = "navigacijskaVrstica3">
+  <a id="navigacijskaVrsticaGumb" class="gumbZaDropdown" onclick="uporabiDropdown()">DEJANJE  ▼</a>
+  <div id="Dropdown" class ="DropdownVsebina">
+    <a  href="/Medved/html/brskaj.html">BRSKAJ</a>
+    <a  href="/Medved/html/isci.html">IŠČI</a>
+    <a  href="/Medved/html/priljubljeno.html">PRILJUBLJENO</a>
+    <a  href="/Medved/html/predlogi.html">PREDLOGI</a>
+    <a  href="/Medved/html/profil.html">PROFIL</a>
+  </div>
+</div>
+  
+  
+    <script>
+      
+  
+    //na začetuku že nastavi kateri stil zgornje vrstice je potreben
+    nastaviStilZgornjeVrstice()
+    //če se spremeni velikost okna popravi razred vrstice zgoraj
+    window.addEventListener('resize', function() {
+      nastaviStilZgornjeVrstice()
+    });
+  
+    var števec = 0;
+  
+    </script>
+  </body>
+</html>

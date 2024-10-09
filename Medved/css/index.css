@@ -1,0 +1,115 @@
+/*div celotne sheme za vpis*/
+.vpis{
+  padding-top: 10%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  
+}
+
+/*napis zgoraj Vpis */
+.naslovVpis{
+ color:white;
+}
+
+/*div, ki vsebuje form, pozicija relative da lahko potem glede na njega pozicioniram ostale elemente, margina-auto sta ga dala na sredino*/
+.podatkiZaVpis{
+  position: relative;
+  background-color: rgb(41, 41, 41);
+  padding: 40px;
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: start;
+}
+
+
+/*stil območja kjer pišeš tekst input*/
+.vpisObmočje{
+  width: 400px;
+  height: 30px;
+  background-color: rgb(41, 41, 41);
+  border: none;
+  border-bottom: 1px solid white;
+  color:white;
+  font-size: large;
+  outline: none;
+  
+}
+
+/*ob fokusu na območju naredi modro črto*/
+.vpisObmočje:focus{
+  border-bottom: 1px solid rgb(124, 210, 236);
+}
+
+/*gumb za vpis*/
+.vpisGumb{
+  margin: 2%;
+  padding-inline: 2%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  background-color: rgb(124, 210, 236);
+  border-style: none;
+  font-size:large;
+  font-weight: bold;
+
+}
+
+
+.vpisGumb:hover{
+  cursor: pointer;
+  background-color: rgb(20, 195, 248);
+  
+}
+
+
+.nimasRacunaTekst{
+  display: inline;
+  color: white;
+}
+
+.registracijaTekst{
+  display: inline;
+  color: rgb(124, 210, 236);
+  text-decoration: none;
+}
+
+.registracijaTekst:hover{
+  color: rgb(20, 195, 248);
+}
+
+/*teksta ki se premikata absolute zato da prekerijeta, pozicije nastavljene glede na div podatkiZaVpis*/
+.premikajočiTekstUsername{
+  position: absolute;
+  color:white;
+  font-size: large;
+  top:50px;
+}
+
+.premikajočiTekstGeslo{
+  position: absolute;
+  color:white;
+  font-size: large;
+  top:120px;
+}
+
+/*tekst za preverjanje gesla*/
+.opozorilniTekst{
+  color: red;
+  font-size: small;
+}
+
+/*za spreminjaje vidnosti prikaza gesla, tudi aboslute da se ga lahko poljubno pozicionira*/
+.prikazigeslo{
+  position: absolute;
+  color:white;
+  font-size: small;
+  top:130px;
+  right: 60px;
+  opacity: 70%;
+}
+
+.prikazigeslo:hover{
+  opacity: 100%;
+  cursor: pointer;
+}

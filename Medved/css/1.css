@@ -1,0 +1,124 @@
+/*skupni css za celotno spletno stran*/
+
+/*Stil telesa*/
+.telo{
+  align-items: center;
+  background-color: black;
+  margin:auto;
+}
+
+/*Stil vrstice na vrhu spletne strani, position je fixed da ostane skos isto, pa z-index je da je vedno spredaj, space evenly vse gumbe*/
+.navigacijskaVrstica{
+  background-color:  rgb(51, 51, 51);
+  width: 100%;
+  position:fixed;
+  padding: 0.5%;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 10;
+
+}
+
+/*Stil linkov na vrstici*/
+.navigacijskaVrstica a{
+  color: white;
+  opacity: 70%;
+  text-align: center;
+  text-decoration: none;
+  padding:0.5% 4%;
+  font-size: large;
+ 
+}
+
+/*sprememba linkov ob hover*/
+.navigacijskaVrstica a:hover{
+  background-color: rgb(41, 41, 41);
+  opacity: 100%;
+}
+
+/*spremi barvo trenutne lokacije na spletni strani*/
+.navigacijskaVrstica a.trenutna{
+  background-color: rgb(138, 138, 138);
+  opacity: 100%;
+}
+
+/*stil vrstice, ki se pojavi ob overflowu*/
+.navigacijskaVrstica3{
+  background-color:  rgb(51, 51, 51);
+  width: 100%;
+  position:fixed;
+  padding:0.5%;
+  z-index: 10;
+  align-items: center;
+}
+
+/*stil gumb s katerim lahko prikaženo dropdown*/
+.gumbZaDropdown{
+  background-color: rgb(51, 51, 51);
+  color: white;
+  opacity: 70%;
+  text-align: center;
+  text-decoration: none;
+  padding:0.5% 3%;
+  border: none;
+  display: block;
+
+}
+
+/*sprememba stila gumba pri hover*/
+.gumbZaDropdown:hover{
+  background-color: rgb(41, 41, 41);
+  opacity: 100%;
+  cursor:pointer
+}
+
+/*stil div-a na dropdown-u*/
+.DropdownVsebina{
+  background-color:  rgb(51, 51, 51);
+  width: 100%;
+  padding: 0.5%;
+}
+
+/*stil linkov na dropdown-u, na začetku  ni displaya*/
+.DropdownVsebina a{
+  color: white;
+  opacity: 70%;
+  text-align: center;
+  text-decoration: none;
+  padding:0.5% 3%;
+  display:none;
+}
+
+/*sprememba stila ob hover*/
+.DropdownVsebina a:hover{
+  background-color: rgb(41, 41, 41);
+  opacity: 100%;
+}
+
+
+
+/*link ki se uporablja v straneh kjer je potreben vpis za uporabo*/
+.pojdiNaVpis{
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  /*postavi stedino elementa na specificirano pozicijo*/
+  transform: translate(-50%,-50%);
+  color: rgb(124, 210, 236);
+  text-decoration: none;
+  font-size: x-large;
+  display: none;
+}
+
+.pojdiNaVpis:hover{
+  color: rgb(20, 195, 248);
+  cursor: pointer;
+}
+
+
+/*printanje ni dovoljeno*/
+@media print{
+  body{
+    display: none;
+  }
+}

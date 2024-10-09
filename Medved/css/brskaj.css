@@ -1,0 +1,346 @@
+/*stil centralnega diva strani brskaj*/
+.centralniDiv{
+  width: 1200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/*vrstica z gumboma za filtriranje in z naslovnom(po čem sortiramo)*/
+.vrsticaBrskaj{
+  position:relative;
+  top: 35px;
+  width: 100%;
+  /*tole je nepotrebno*/
+  display: inline-block;
+  align-items: center;
+  
+}
+
+/*po čem sortiramo naslov*/
+.naslov{
+  top: 0px;
+  position: absolute;
+  color:white;
+  font-size: xx-large;
+}
+
+/*gumb za izbiro sortiranja*/
+.sortiraj{
+  position: absolute;
+  top: 35px;
+  right: 80px;
+  color:white;
+  opacity: 70%;
+  padding:1% 2%;
+
+}
+
+/*ob hover*/
+.sortiraj:hover{
+  opacity: 100%;
+  cursor: pointer;
+  background-color: rgb(51, 51, 51);
+}
+
+/*gumb za filtriranje anime-jev*/
+.filtriraj{
+  right: -20px;
+  top: 35px;
+  position: absolute;
+  color:white;
+  opacity: 70%;
+  padding:1% 2%;
+}
+
+/*ob hover*/
+.filtriraj:hover{
+  opacity:100%;
+  cursor: pointer;
+  background-color: rgb(51, 51, 51);
+}
+
+/*stil za popUpa za izbiro sortiranja in filtriranja*/
+.popUp{
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid white;
+  border-radius: 10px;
+  z-index:11;
+  background-color: rgb(51, 51, 51);
+  width:400px;
+  text-align: center;
+ padding: 20px;
+ display: none;
+}
+
+/*gumbi znotran pop up okna za izbiro sortiranja*/
+.sortirajGumb{
+  color: white;
+  opacity: 70%;
+  align-items: center;
+  font-size: large;
+}
+
+/*ob hover*/
+.sortirajGumb:hover{
+  opacity: 100%;
+  cursor:pointer
+}
+
+/*Stil naslova v popUP oknih za izbiro in sortiranje*/
+.naslovPopUp{
+  color:white;
+  font-size: x-large;
+}
+
+/*stil diva za checkboxe*/
+.checkBox{
+ text-align: center;
+}
+
+/*stil napisov ob checkboxih*/
+.checkBox label{
+  color:white;
+  font-size: large;
+}
+
+/*stil gumb za izbiro potrjevanje izbire filtrov*/
+.potrdiGumb{
+  color: white;
+  opacity: 70%; 
+}
+
+/*ob hover*/
+.potrdiGumb:hover{
+  opacity: 100%;
+  cursor:pointer
+}
+
+/*križec gumb za vsa pop up okna*/
+.closeButton{
+  position:absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  border:none;
+  background-color: rgb(82, 82, 82);
+  font-size: large;
+  text-align: center;
+}
+
+/*ob hover*/
+.closeButton:hover{
+  cursor: pointer;
+  background-color: rgb(197, 197, 197);
+}
+
+/*div za opis enega animeja, se zelo spreminja z javascriptom (in veliko se jih doda)*/
+.animeDiv{
+  position: relative;
+  top: 110px;
+  background-color:  rgb(71, 71, 71);
+  padding: 10px;
+  width: 100%;
+  
+}
+
+/*slika ki se prikaže v animeDivu(torej v glavni strani brskaj)*/
+.slikaGlavnaStran{
+  height: 150px;
+  width: 105px;
+  display: inline-block;
+}
+
+/*ob hover*/
+.slikaGlavnaStran:hover{
+  cursor: pointer;
+  opacity: 70%;
+}
+
+/*stil naslova anime-ja v anime divu*/
+.naslovAnime{
+  position: absolute;
+  top: 0px;
+  left: 150px;
+  color: rgb(107, 218, 252);
+}
+
+/*ob hover*/
+.naslovAnime:hover{
+  cursor: pointer;
+  color: rgb(0, 128, 167);
+}
+
+/*stil napisa za oceno v anime divu*/
+.ocena{
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  color: white;
+}
+
+/*stil napisa št gledalcev v anime divu*/
+.gledalci{
+  position: absolute;
+  top: 80px;
+  left: 150px;
+  color: white
+}
+
+/*stil linka za trailer v anime divu*/
+.trailer{
+  position: absolute;
+  top: 125px;
+  left: 150px;
+  color: white;
+  text-decoration: none;
+}
+
+/*ob hover*/
+.trailer:hover{
+  color: lightblue;
+}
+
+/*stil napison za žanre v anime divu*/
+.genre{
+  position: absolute;
+  top: 50px;
+  left: 500px;
+  color: white
+}
+
+/*stil za napis datuma izdajanja v anime divu*/
+.datum{
+  position: absolute;
+  top: 80px;
+  left: 500px;
+  color: white
+}
+
+/*stil napisa dolžine trajanja anime-ja v anime divu*/
+.dolzina{
+  position: absolute;
+  top: 110px;
+  left: 500px;
+  color: white
+}
+
+/*gumb za vnost amime-ja v bazo*/
+.gumbZaVnos{
+  margin: 2px;
+  padding-inline: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(124, 210, 236);
+  border-style: none;
+  font-size:large;
+  font-weight: bold;
+  position:absolute;
+  top: 80px;
+  left: 950px;
+}
+
+.gumbZaVnos:hover{
+  cursor: pointer;
+  background-color: rgb(20, 195, 248);
+  
+}
+
+/*gumb za odstranit anime iz baze*/
+.gumbOdstrani{
+  margin: 2px;
+  padding-inline: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(255, 117, 117);
+  border-style: none;
+  font-size:large;
+  font-weight: bold;
+  position:absolute;
+  top: 80px;
+  left: 950px;
+  display: none;
+}
+
+.gumbOdstrani:hover{
+  cursor: pointer;
+  background-color: rgb(255, 165, 165);
+}
+
+
+/*stil gumba za prikaz več anime-jev, pozicija se zelo spreminja v javascript*/
+.gumbVec{
+  position: absolute;
+  left: 50%;
+  top: 130px;
+  padding: 5px;
+  color:black;
+  background-color: rgb(124, 210, 236);
+  font-weight: bold;
+  font-size: large;
+  border: none;
+
+}
+.gumbVec:hover{
+  cursor: pointer;
+  background-color: rgb(20, 195, 248);
+}
+
+
+/*stil pop up okna za ogled povzetka anime-ja*/
+.popUpAnime{
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  border: 1px solid white;
+  border-radius: 10px;
+  z-index:11;
+  background-color: rgb(51, 51, 51);
+  width:80%;
+  height: 520px;
+ padding: 20px;
+ display: none;
+ overflow: scroll;
+ 
+}
+
+/*stile slike znotraj pop up okna anime-ja*/
+.popUpAnime img{
+  position: relative;
+  height: 500px;
+  width: 350px;
+}
+
+/*stila za opis animeja v pop up oknu anime-ja*/
+.animeOpis{
+  color:white;
+  position: absolute;
+  top: 100px;
+  left: 400px
+
+}
+
+/*stil naslova anime-ja v pop up oknu*/
+.naslovPopUpAnime{
+  color: rgb(107, 218, 252);
+  font-size: x-large;
+  position: absolute;
+  top: 0px;
+  left: 400px;
+}
+
+/*stil opisa anime-ja v pop up oknu*/
+.opisVanglescini{
+  color:white;
+  position: absolute;
+  top: 70px;
+  left: 400px;
+  font-weight: bold;
+ 
+}
+
