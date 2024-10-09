@@ -1,0 +1,1 @@
+this website is made to work with a xampp server
